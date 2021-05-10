@@ -136,7 +136,7 @@
 }
 
 .styles_Camera_2YrFaFW5xnMVICdsVnfUvt {
-  height: auto;
+  height: 100%; /*changed*/
   display: flex;
   flex-flow: column;
   position: relative;
