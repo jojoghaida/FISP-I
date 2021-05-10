@@ -1,12 +1,18 @@
+:root {
+  --safeAreaBtm: env(safe-area-inset-bottom);
+  --safeAreaTop: env(safe-area-inset-top);
+}
+
 #cameraView {
-  border: 5px solid red;
+  border: 5px solid black;
   width: calc(100% - 10px);
   height: calc(100% - 50px);
   position: fixed;
 }
 
 #Ui {
-  height: 100%;
+  top:var(--safeAreaTop);
+  height:calc(100% - var(--safeAreaTop) - var(--safeAreaBtm));
   width: 100%;
   background-color: rgb(200, 200, 255);
   position: fixed;
