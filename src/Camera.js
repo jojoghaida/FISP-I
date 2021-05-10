@@ -3,7 +3,7 @@ const constraints = { audio: false, video: { width: 1280, height: 720 } };
 
 const CamBox = ( ) => {
   return(
-    <div>
+    <div id="cameraView">
       <Camera
             device={DEVICE.MOBILE}
             facingMode={FACING_MODE.ENVIRONMENT}
@@ -11,7 +11,6 @@ const CamBox = ( ) => {
             quality="1"
             onError={error => console.log(error)}
             onTakePhoto={dataUrl => console.log(dataUrl)}
-            id="cameraView"
           />
     </div>
   );
