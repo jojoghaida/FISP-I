@@ -3,12 +3,6 @@
   --safeAreaTop: env(safe-area-inset-top);
 }
 
-#cameraView {
-  /* border: 5px solid black; */
-  width: 100%;
-  height: 100%;
-  /* position: fixed; */
-}
 
 #Ui {
   top:var(--safeAreaTop);
@@ -17,6 +11,33 @@
   position: fixed;
   display: flex;
   flex-direction: column;
+}
+
+#head {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid black;
+  align-items: center;
+  grid-gap: 5px;
+  font-size: 18px;
+}
+
+#head > div {
+  margin: 5px;
+}
+
+#sectionAnnot {
+  flex-grow: 2;
+  text-align: right;
+}
+
+#cameraView {
+  /* border: 5px solid black; */
+  width: 100%;
+  height: 100%;
+  /* position: fixed; */
 }
 
 
