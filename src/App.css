@@ -5,15 +5,25 @@
 
 #cameraView {
   border: 5px solid black;
-  width: calc(100% - 10px);
-  height: calc(100% - 50px);
-  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* position: fixed; */
 }
 
 #Ui {
   top:var(--safeAreaTop);
   height:calc(100% - var(--safeAreaTop) - var(--safeAreaBtm));
   width: 100%;
-  background-color: rgb(200, 200, 255);
   position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#navi {
+  height: 45px;
+  width: 100%;
+  background-color: rgb(255,200,200);
+  display: flex;
+  flex-direction: row;
 }
