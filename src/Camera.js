@@ -1,4 +1,5 @@
 import Camera, { DEVICE, FACING_MODE, PLACEMENT } from 'react-camera-ios';
+import 'react-camera-ios/build/styles.css';
 const constraints = { audio: false, video: { width: 1280, height: 720 } };
 
 const CamBox = ( ) => {
