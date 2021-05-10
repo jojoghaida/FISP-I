@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Camera from './Camera';
+import Ui from './UI';
 
 function App() {
   return (
     <div className="App">
-      <Camera/>
+      <Ui/>
     </div>
   );
 }

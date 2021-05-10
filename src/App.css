@@ -1,13 +1,13 @@
-
 #cameraView {
   border: 5px solid red;
-  width:calc(100% - 10px);
-  height:calc( 100% - 200px);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  width: calc(100% - 10px);
+  height: calc(100% - 50px);
+  position: fixed;
 }
 
-/* #cameraView > div > button {
-  width: 500px;
-} */
+#Ui {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(200, 200, 255);
+  position: fixed;
+}
