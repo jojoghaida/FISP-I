@@ -11,6 +11,7 @@ const CamBox = ( ) => {
             quality="1"
             onError={error => console.log(error)}
             onTakePhoto={dataUrl => console.log(dataUrl)}
+            id="cameraView"
           />
     </div>
   );
