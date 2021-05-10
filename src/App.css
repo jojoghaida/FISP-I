@@ -4,7 +4,7 @@
 }
 
 #cameraView {
-  border: 5px solid black;
+  /* border: 5px solid black; */
   width: 100%;
   height: 100%;
   /* position: fixed; */
@@ -23,7 +23,9 @@
 #navi {
   height: 45px;
   width: 100%;
-  background-color: rgb(255,200,200);
   display: flex;
   flex-direction: row;
+  grid-gap: 5px;
+  align-items: baseline;
+  justify-content: center;
 }

@@ -4,7 +4,12 @@ const Ui = ( ) => {
   return(
     <div id="Ui">
       <Camera/>
-      <div id="navi"><div>btn</div></div>
+      <div id="navi">
+        <div>btn</div>
+        <div>btn</div>
+        <div>btn</div>
+        <div>btn</div>
+      </div>
     </div>
   );
 };
