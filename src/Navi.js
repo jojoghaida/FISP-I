@@ -1,9 +1,9 @@
 
-const Navi = ( ) => {
+const Navi = ( {cameraPower} ) => {
 
   return(
     <div id="navi">
-      <div>btn</div>
+      <div onClick={cameraPower}>CAM</div>
       <div>btn</div>
       <div>btn</div>
       <div>btn</div>

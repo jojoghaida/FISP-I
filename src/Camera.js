@@ -5,8 +5,9 @@ async function getDevices() {
   const devices = await navigator.mediaDevices.enumerateDevices();
   console.log(devices);
 }
-const CamBox = ( ) => {
+const CamBox = ( {on} ) => {
   getDevices( );
+  if( !on ) return null;
   return(
     <div id="cameraView">
       <Camera
