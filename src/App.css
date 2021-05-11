@@ -1,6 +1,7 @@
 :root {
   --safeAreaBtm: env(safe-area-inset-bottom);
   --safeAreaTop: env(safe-area-inset-top);
+  --headSize: 50px;
 }
 
 html {
@@ -19,17 +20,21 @@ html {
 }
 
 #head {
-  height: 50px;
+  height: var(--headSize);
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  grid-gap: 5px;
   font-size: 18px;
   box-shadow: 0px 1px 5px rgb(100,100,100);
 }
 
-#head > div {
+#headFlex {
+  height: var(--headSize);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-gap: 5px;
+}
+
+#headFlex > div {
   margin: 5px;
 }
 
@@ -52,10 +57,10 @@ html {
   position: absolute;
   height: 200px;
   width: 150px;
-  top: 100px;
+  top: calc( var(--headSize) + var(--safeAreaTop) );
   right: 0;
   box-shadow: 0px 1px 5px rgb(100,100,100);
-
+  background-color: rgba(255,255,255,0.5);
 }
 
 

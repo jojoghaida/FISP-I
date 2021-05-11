@@ -14,10 +14,10 @@ function App() {
   return (
     <div id="App">
       <Head/>
+      <div id="projectRef"></div>
       <div id="Content">
         <Camera on={sensor}/>
       </div>
-      <div id="projectRef"></div>
       <Navi
         cameraPower={cameraPower}
         />
