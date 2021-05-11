@@ -10,13 +10,15 @@ function App( ) {
 
   const [ sensor, sensorSwitch ] = useState( true );
   const cameraPower = ( ) => sensorSwitch(!sensor);
-
+  const [ lastImg, setLatestImg ] = useState( null );
+  const [ imagesInSession, updateImages ] = useState( [ ] );
+  console.log(lastImg);
   return (
     <div id="App">
       <Head/>
       <div id="projectRef"><img src="CHRISTOPHER.jpg"/></div>
       <div id="Content">
-        <Camera on={sensor}/>
+        <Camera on={sensor} lastImg={lastImg} setLatestImg={setLatestImg}/>
       </div>
       <Navi
         cameraPower={cameraPower}

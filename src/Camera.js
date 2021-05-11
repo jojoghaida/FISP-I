@@ -5,7 +5,7 @@ async function getDevices() {
   const devices = await navigator.mediaDevices.enumerateDevices();
   console.log(devices);
 }
-const CamBox = ( {on} ) => {
+const CamBox = ( {on, lastImg, setLatestImg} ) => {
   getDevices( );
   if( !on ) return null;
   return(
@@ -16,8 +16,11 @@ const CamBox = ( {on} ) => {
         placement={PLACEMENT.COVER}
         quality="1"
         onError={error => console.log(error)}
-        onTakePhoto={dataUrl => console.log(dataUrl)}
+        onTakePhoto={dataUrl => setLatestImg(dataUrl)}
       />
+    <div id="lastImgPreview">
+        <img src={`${lastImg}`}/>
+      </div>
     </div>
   );
 };
