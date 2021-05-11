@@ -14,7 +14,7 @@ function App() {
   return (
     <div id="App">
       <Head/>
-      <div id="projectRef"></div>
+      <div id="projectRef"><img src="CHRISTOPHER.jpg"/></div>
       <div id="Content">
         <Camera on={sensor}/>
       </div>
