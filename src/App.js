@@ -17,6 +17,7 @@ function App() {
       <div id="Content">
         <Camera on={sensor}/>
       </div>
+      <div id="projectRef"></div>
       <Navi
         cameraPower={cameraPower}
         />
