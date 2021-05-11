@@ -5,10 +5,10 @@ const Head = ( ) => {
     <div id="head">
       <div id="headFlex">
         <div>
-          Project Name
+          180 CHRISTOPHER St.
         </div>
         <div id="sectionAnnot">
-          Section
+          North Facade
         </div>
       </div>
     </div>

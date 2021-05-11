@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
 
-  const [ sensor, sensorSwitch ] = useState( false );
+  const [ sensor, sensorSwitch ] = useState( true );
   const cameraPower = ( ) => sensorSwitch(!sensor);
 
   return (
