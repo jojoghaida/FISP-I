@@ -4,7 +4,7 @@ const Head = ( ) => {
   return(
     <div id="head">
       <div id="headFlex">
-        <div>
+        <div id="jobName">
           180 CHRISTOPHER St.
         </div>
         <div id="sectionAnnot">

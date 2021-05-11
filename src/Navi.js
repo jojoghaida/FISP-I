@@ -4,8 +4,8 @@ const Navi = ( {cameraPower} ) => {
       <div id="naviContent">
         <div onClick={cameraPower}>CAM</div>
         <div>LOAD</div>
-        <div>btn</div>
-        <div>btn</div>
+        <div>PHOTOS</div>
+        <div>VIEW</div>
       </div>
     </div>
   );

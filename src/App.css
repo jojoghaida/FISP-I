@@ -36,6 +36,7 @@ html {
 }
 
 #headFlex > div {
+  width: 50%;
   margin: 5px;
 }
 
