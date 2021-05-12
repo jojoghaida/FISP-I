@@ -76,7 +76,7 @@ html {
   overflow: scroll;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #photoGrid {
