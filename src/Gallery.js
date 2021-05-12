@@ -1,3 +1,4 @@
+//main
 const Gallery = ( {imagesInSession} ) => {
   return(
     <div id="gallery">
@@ -6,6 +7,4 @@ const Gallery = ( {imagesInSession} ) => {
       </div>
     </div>
   );
-};
-
-export default Gallery;
+}; export default Gallery;

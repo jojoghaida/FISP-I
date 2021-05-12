@@ -8,7 +8,9 @@ const Head = ( ) => {
           180 CHRISTOPHER St.
         </div>
         <div id="sectionAnnot">
-          North Facade
+          <a>North Facade</a>
+          <a>#N14</a>
+          <a>LVL 4</a>
         </div>
       </div>
     </div>
