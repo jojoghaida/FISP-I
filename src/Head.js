@@ -1,12 +1,9 @@
-
+//main
 const Head = ( ) => {
-
   return(
     <div id="head">
       <div id="headFlex">
-        <div id="jobName">
-          180 CHRISTOPHER St.
-        </div>
+        <div id="jobName">180 CHRISTOPHER St.</div>
         <div id="sectionAnnot">
           <a>North Facade</a>
           <a>#N14</a>
@@ -15,6 +12,4 @@ const Head = ( ) => {
       </div>
     </div>
   );
-};
-
-export default Head;
+}; export default Head;

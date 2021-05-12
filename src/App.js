@@ -6,9 +6,11 @@ import './App.css';
 //components
 import Head from './Head';
 import Camera from './Camera';
+import BluePrint from './BluePrint';
 import Gallery from './Gallery';
 import Navi from './Navi';
 //main
+
 const App = ( ) => {
   //states
   const [ activeTab, setTab ] = useState( "CAMERA" );
@@ -16,7 +18,8 @@ const App = ( ) => {
   const [ lastImg, setLatestImg ] = useState( null );
   useEffect( ( ) => { setLatestImg( images[ images.length - 1] ); }, [ images ] );
   const addToImageLib = newImg => updateImages( images => [...images, newImg] );
-  const [ photoMeta, updateMetaFrame ] = useState( null );
+  const [ photoMeta, updateMetaFrame ] = useState( { "Level": {"value": 4},"Location ID": {"value": "#N14" } } );
+  const [ projectMapScale, setMapScale ] = useState( "mini" );
   //functions
   const content = ( ) => {
     switch ( activeTab ) {
@@ -27,7 +30,8 @@ const App = ( ) => {
     }
   };
   const showMap = ( activeTab === "CAMERA" ) ?
-  <div id="projectRef"><img src="CHRISTOPHER.jpg"/></div> : null
+  <BluePrint/> : null
+  const setMeta = <div id="metaControl"><div>SET META DATA</div></div>
   //render
   return (
     <div id="App">
