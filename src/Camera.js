@@ -3,11 +3,12 @@ import Camera, { DEVICE, FACING_MODE, PLACEMENT } from 'react-camera-ios';
 const constraints = { audio: false, video: { width: 1280, height: 720 } };
 async function getDevices() {
   const devices = await navigator.mediaDevices.enumerateDevices();
-  console.log(devices);
+  // console.log(devices);
 }
-const CamBox = ( {on, lastImg, setLatestImg} ) => {
+const CamBox = ( {toggleSensor, lastImg, setLatestImg} ) => {
   getDevices( );
-  if( !on ) return null;
+  console.log(FACING_MODE);
+  if( !toggleSensor ) return null;
   return(
     <div id="cameraView">
       <Camera

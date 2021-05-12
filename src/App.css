@@ -70,6 +70,25 @@ html {
 
 }
 
+#gallery{
+  background-color: rgb(240,240,240);
+  height: calc(100% - 10px);
+  width: 100%;
+  display: flex;
+  grid-gap: 2px;
+  padding: 5px;
+}
+
+#gallery > div {
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  display: flex;
+}
+
+#gallery > div > img {
+}
+
 #projectRef {
   position: absolute;
   max-width: 50%;
