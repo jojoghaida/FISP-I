@@ -1,7 +1,9 @@
 const Gallery = ( {imagesInSession} ) => {
   return(
     <div id="gallery">
-      {imagesInSession.map( data => <div><img src={data}/></div> )}
+      <div id="photoGrid">
+        {imagesInSession.map( ( data, i ) => <div key={`photo:${i}`}><img src={data}/></div> )}
+      </div>
     </div>
   );
 };
