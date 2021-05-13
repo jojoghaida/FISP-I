@@ -10,7 +10,6 @@ import BluePrint from './BluePrint';
 import Gallery from './Gallery';
 import Navi from './Navi';
 //main
-
 const App = ( ) => {
   //states
   const [ activeTab, setTab ] = useState( "CAMERA" );
@@ -29,8 +28,8 @@ const App = ( ) => {
       default: return "error";
     }
   };
-  const showMap = ( activeTab === "CAMERA" ) ?
-  <BluePrint/> : null
+  const showMap = ( activeTab !== "CAMERA" ) ? null :
+  <BluePrint/> 
   const setMeta = <div id="metaControl"><div>SET META DATA</div></div>
   //render
   return (
