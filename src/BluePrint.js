@@ -11,5 +11,6 @@ const BluePrint = ( {} ) => {
   return <div id="bluePrint" style={style}>
     <div id="expBluePrint" onClick={ setViewPortSize.bind( this, !viewportSize ) }/>
     <img src="CHRISTOPHER.jpg"/>
+    { (viewportSize) ? null : "hey" }
   </div>;
 }; export default BluePrint;
