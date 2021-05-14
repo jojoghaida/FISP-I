@@ -8,11 +8,12 @@ const BluePrint = ( {} ) => {
     maxWidth: "100%",
     maxHeight: "calc(100% - var(--safeAreaTop) - 55px - var(--safeAreaTop) - var(--headSize))"
   };
+  // <div id="drawingOverlay"></div>
   return <div id="bluePrint" style={style}>
     <div id="drawingContainer">
       <img src="CHRISTOPHER.jpg"/>
     </div>
-    { (viewportSize) ? null : null }
-    <div id="expBluePrint" onClick={setViewPortSize.bind( this, !viewportSize )}/>
+    { (viewportSize) ? null : <div id="metaControl"><div>param value</div><div></div></div> }
+    <div id="expBluePrint" onClick={setViewPortSize.bind( this, !viewportSize )}>exp</div>
   </div>;
 }; export default BluePrint;

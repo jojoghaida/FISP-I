@@ -29,8 +29,7 @@ const App = ( ) => {
     }
   };
   const showMap = ( activeTab !== "CAMERA" ) ? null :
-  <BluePrint/> 
-  const setMeta = <div id="metaControl"><div>SET META DATA</div></div>
+  <BluePrint/>
   //render
   return (
     <div id="App">
