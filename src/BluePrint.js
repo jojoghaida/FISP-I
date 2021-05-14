@@ -6,11 +6,13 @@ const BluePrint = ( {} ) => {
     width: "100%",
     height: "100%",
     maxWidth: "100%",
-    maxHeight: "100%"
+    maxHeight: "calc(100% - var(--safeAreaTop) - 55px - var(--safeAreaTop) - var(--headSize))"
   };
   return <div id="bluePrint" style={style}>
-    <div id="expBluePrint" onClick={ setViewPortSize.bind( this, !viewportSize ) }/>
-    <img src="CHRISTOPHER.jpg"/>
-    { (viewportSize) ? null : "hey" }
+    <div id="drawingContainer">
+      <img src="CHRISTOPHER.jpg"/>
+    </div>
+    { (viewportSize) ? null : null }
+    <div id="expBluePrint" onClick={setViewPortSize.bind( this, !viewportSize )}/>
   </div>;
 }; export default BluePrint;
