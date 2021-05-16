@@ -1,13 +1,11 @@
 import './camStyles.css';
 import Camera, { DEVICE, FACING_MODE, PLACEMENT } from 'react-camera-ios';
 const constraints = { audio: false, video: { width: 1280, height: 720 } };
-async function getDevices() {
-  const devices = await navigator.mediaDevices.enumerateDevices();
-};
 //main
-const CamBox = ( {lastImg, setLatestImg} ) => {
-  getDevices( );
+// const x = await getDevices( );
+const CamBox = ( {lastImg, setLatestImg, deviceList} ) => {
   console.log(FACING_MODE);
+  console.log(deviceList);
   return(
     <div id="cameraView">
       <Camera

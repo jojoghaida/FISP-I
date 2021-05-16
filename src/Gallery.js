@@ -1,5 +1,6 @@
 //main
 const Gallery = ( {imagesInSession} ) => {
+  console.log("gallery");
   return(
     <div id="gallery">
       <div id="photoGrid">
