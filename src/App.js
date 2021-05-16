@@ -24,6 +24,7 @@ const App = ( ) => {
   const [ lastImg, setLatestImg ] = useState( null );
   const addToImageLib = newImg => updateImages( images => [...images, newImg] );
   const [ photoMeta, updateMetaFrame ] = useState( { "Level": {"value": 4},"Location ID": {"value": "#N14" } } );
+  const [ drawing, setNewDrawing ] = useState( null );
   const [ projectMapScale, setMapScale ] = useState( "mini" );
   const [ deviceList, setdeviceList ] = useState( null );
   useEffect( ( ) => { setLatestImg( images[ images.length - 1] ); }, [ images ] );
@@ -38,7 +39,7 @@ const App = ( ) => {
     }
   };
   const showMap = ( activeTab !== "CAMERA" ) ? null :
-  <BluePrint/>
+  <BluePrint metaData={photoMeta} setMeta={updateMetaFrame}/>
   //render
   return (
     <div id="App">

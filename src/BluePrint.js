@@ -6,7 +6,7 @@ const BluePrint = ( {} ) => {
     width: "100%",
     height: "100%",
     maxWidth: "100%",
-    maxHeight: "calc(100% - var(--footSize) - var(--safeAreaTop) - var(--headSize))"
+    maxHeight: "calc(100% - var(--footSize) - var(--safeAreaBtm) - var(--headSize))"
   };
   // <div id="drawingOverlay"></div>
   return <div id="bluePrint" style={style}>
