@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import SetMeta from './SetMeta';
 //main
-const BluePrint = ( {} ) => {
+const BluePrint = ( { drawing } ) => {
   const [ viewportSize, setViewPortSize ] = useState( true );
+  if( !drawing ) return null;
   const style = (viewportSize === true) ? null : {
     width: "100%",
     height: "100%",
@@ -11,16 +13,9 @@ const BluePrint = ( {} ) => {
   // <div id="drawingOverlay"></div>
   return <div id="bluePrint" style={style}>
     <div id="drawingContainer">
-      <img src="CHRISTOPHER.jpg"/>
+      <img src={drawing.img}/>
     </div>
-    {
-      ( viewportSize ) ? null :
-        <div id="metaControl">
-          <div><div>param</div><div>value</div></div>
-          <div><div>param</div><div>value</div></div>
-          <div><div>param</div><div>value</div></div>
-        </div>
-    }
+    { ( viewportSize ) ? null : <SetMeta/> }
     <div id="expBluePrint" onClick={setViewPortSize.bind( this, !viewportSize )}>exp</div>
   </div>;
 }; export default BluePrint;
