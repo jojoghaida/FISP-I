@@ -15,7 +15,7 @@ const BluePrint = ( { drawing } ) => {
     <div id="drawingContainer">
       <img src={drawing.img}/>
     </div>
-    { ( viewportSize ) ? null : <SetMeta/> }
+    { ( viewportSize ) ? null : <SetMeta metaKeys={Object.keys(drawing.meta)} metaOptions={drawing.meta}/> }
     <div id="expBluePrint" onClick={setViewPortSize.bind( this, !viewportSize )}>exp</div>
   </div>;
 }; export default BluePrint;
